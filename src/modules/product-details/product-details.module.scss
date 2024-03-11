@@ -1,0 +1,122 @@
+.ProductDetailsContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  min-height: 85vh;
+  width: 100%;
+  padding: 4em 0;
+  box-sizing: border-box;
+  .backBtn {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    font-size: 3em;
+    cursor: pointer;
+    color: #7c7c7c;
+    transition: 0.2s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .imageContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .detailsContainer {
+    box-sizing: border-box;
+    padding-right: 8%;
+    width: 38%;
+    .name {
+      font-weight: 600;
+    }
+    .brand {
+      font-weight: 500;
+    }
+    .description {
+      font-weight: 400;
+    }
+    .disCountPrice {
+      display: flex;
+      align-items: center;
+      column-gap: 2em;
+      margin-top: 0.5em;
+      .perc {
+        font-size: 1.3em;
+        color: red;
+      }
+      .priceCont {
+        position: relative;
+        .dollarSign {
+          position: absolute;
+          top: 0;
+          left: -0.6em;
+          font-size: 1.1em; /* Adjust font size as needed */
+          color: #333; /* Adjust color as needed */
+        }
+        .disPrice {
+          font-size: 1.8em;
+          font-weight: 500;
+        }
+      }
+    }
+    .actualPrice {
+      .price {
+        color: #3f3f3f;
+        font-size: 0.8em;
+        text-decoration: line-through;
+      }
+    }
+    .leftP {
+      margin: 1em 0 -1em 0;
+    }
+    .oos {
+      margin: 1em 0 -1em 0;
+      font-size: 1.1em;
+      font-weight: 600;
+      color: red;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      column-gap: 2em;
+      margin-top: 2em;
+      .qnt {
+        background: rgb(177, 177, 177);
+        border: 1px solid rgb(97, 97, 97);
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .addToCart,
+      .buyNow {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: rgb(70, 70, 70);
+        border-radius: 8px;
+        padding: 0.4em 1.5em;
+        font-size: 1.1em;
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .addToCart {
+        background-color: rgba(255, 255, 0, 0.89);
+        &:hover {
+          background-color: rgb(255, 238, 0);
+        }
+      }
+      .buyNow {
+        background-color: rgb(255, 153, 0);
+        &:hover {
+          background-color: rgb(255, 153, 0);
+        }
+      }
+    }
+  }
+}

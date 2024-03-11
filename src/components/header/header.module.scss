@@ -1,0 +1,49 @@
+.HeaderContainer {
+  background-color: #ff9900;
+  color: white;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3em 0.5em 2em;
+  box-sizing: border-box;
+  .LOGO {
+    letter-spacing: 0.15em;
+    cursor: pointer;
+  }
+  .searchBox {
+    width: 20%;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 50%;
+    .searchBar {
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      height: 2.5em;
+      padding: 0 1em;
+      box-sizing: border-box;
+      width: 100%;
+      color: rgb(59, 59, 59);
+      font-size: 1em;
+      font-weight: 500;
+    }
+    .searchIcon {
+      cursor: pointer;
+      position: absolute;
+      right: 5%;
+      top: 15%;
+      color: rgb(165, 165, 165);
+      transition: all 0.3s;
+    }
+  }
+  .rightSide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    .profileBadge {
+      font-size: 2.5em;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.MyCartContainer {
+  padding: 2em 3em;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .cart {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    min-width: 50%;
+    box-sizing: border-box;
+    .heading {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 2em;
+      color: rgb(92, 92, 92);
+      margin: 0;
+    }
+    .card {
+      display: flex;
+      width: 90%;
+      padding: 1em;
+      .description {
+        display: flex;
+        flex-direction: column;
+        margin-left: 4em;
+        .disCountPrice {
+          display: flex;
+          align-items: center;
+          column-gap: 2em;
+          margin-top: 0.5em;
+          .perc {
+            font-size: 1.3em;
+            color: red;
+          }
+          .priceCont {
+            position: relative;
+            .dollarSign {
+              position: absolute;
+              top: 0;
+              left: -0.5em;
+              font-size: 1.1em; /* Adjust font size as needed */
+              color: #333; /* Adjust color as needed */
+            }
+            .disPrice {
+              font-size: 1.8em;
+              font-weight: 500;
+            }
+          }
+        }
+        .actualPrice {
+          .price {
+            color: #3f3f3f;
+            font-size: 0.8em;
+            text-decoration: line-through;
+          }
+        }
+        .action {
+          display: flex;
+          align-items: center;
+          column-gap: 2em;
+          .quantity {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            width: 10em;
+            .addRemoveIcon {
+              background-color: #eaf7ff;
+              padding: 0.1em 0.4em;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+          .delBtn {
+            border: 1px solid rgb(179, 179, 179);
+            background-color: #eaf7ff;
+            color: #535353;
+            padding: 0.5em 1em;
+            outline: none;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+              background-color: #c8e7e1;
+            }
+          }
+        }
+      }
+    }
+    .cartPrice {
+      margin: 0;
+      margin-left: auto;
+      margin-right: 1em;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .proceedbtn {
+      cursor: pointer;
+      background-color: rgb(255, 153, 0);
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      padding: 0.5em 2em;
+      color: #4d4d4d;
+      font-size: 1.2em;
+      transition: 0.2s;
+      margin-left: auto;
+      &:hover {
+        background-color: rgb(255, 174, 0);
+      }
+    }
+  }
+}
+
+.placed {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+  .orderplaced {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    font-size: 2em;
+    color: rgb(92, 92, 92);
+    .icon {
+      font-size: 2em;
+    }
+  }
+  .shopmore {
+    background-color: rgb(0, 153, 255);
+    font-size: 1.2em;
+    padding: 0.3em 1em;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+    &:hover {
+      background-color: rgb(0, 132, 255);
+    }
+  }
+}

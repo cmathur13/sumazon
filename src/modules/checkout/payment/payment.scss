@@ -1,0 +1,71 @@
+/* CreditCardForm.css */
+.credit-card-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card-preview {
+  margin-right: 3em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.4em;
+  width: 16em;
+  .inputBar {
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+    border: 1px solid #333;
+    outline: none;
+    width: 90%;
+  }
+  .twoI {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 100%;
+    .small {
+      width: 40%;
+      padding: 0.5em 0.8em;
+      border-radius: 8px;
+      border: 1px solid #333;
+      outline: none;
+    }
+  }
+  .payBtn {
+    background-color: rgb(0, 153, 255);
+    width: 100%;
+    font-size: 1em;
+    padding: 0.3em 1em;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+    &:hover {
+      background-color: rgb(0, 132, 255);
+    }
+  }
+  .payBtnD {
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    font-size: 1em;
+    padding: 0.3em 1em;
+    border: none;
+    color: rgb(131, 131, 131);
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+    &:hover {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.imageList {
+  overflow-y: overlay;
+  overflow-x: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 2em;
+  padding: 0.5em;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgb(170, 170, 170);
+    opacity: 0.9;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgb(99, 99, 99);
+    opacity: 1;
+  }
+
+  .imageItem {
+    position: relative;
+    .cancel {
+      z-index: 10;
+      position: absolute;
+      top: 2%;
+      right: 6%;
+      color: black;
+      background-color: white;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

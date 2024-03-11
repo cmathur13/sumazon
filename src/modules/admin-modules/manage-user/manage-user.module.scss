@@ -1,0 +1,23 @@
+.ManageUsersContainer {
+  min-height: 70vh;
+  .topLayer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 0 1em 0;
+    .addUser {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: rgb(0, 153, 255);
+      font-size: 1.2em;
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

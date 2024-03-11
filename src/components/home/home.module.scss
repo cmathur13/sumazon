@@ -1,0 +1,11 @@
+.HomeContainer {
+  position: relative;
+  margin: 0;
+  background: linear-gradient(to top, #fbad7f9e, #cdccc8, white);
+  .alert {
+    position: absolute;
+    width: 30%;
+    top: 10%;
+    right: 0%;
+  }
+}

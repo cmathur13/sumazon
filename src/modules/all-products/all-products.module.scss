@@ -1,0 +1,16 @@
+.AllProducts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  row-gap: 4em;
+  column-gap: 3.75%;
+  padding: 2em 3em;
+  min-height: 80vh;
+  .noProd {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    z-index: 1000;
+    color: rgb(68, 68, 68);
+  }
+}
