@@ -31,7 +31,7 @@ const MyCart = () => {
   const navigate = useNavigate();
   useEffect(() => {
     dispatch(asyncGetCartByUserId(userId));
-  }, [dispatch]);
+  }, [dispatch, userId]);
 
   const handleRemoveItem = (productId: number, isDelete: boolean) => {
     dispatch(

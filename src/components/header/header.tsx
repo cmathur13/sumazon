@@ -4,7 +4,7 @@ import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useNavigate } from "react-router-dom";
 import { StyledCartBadge, StyledProfileBadge } from "./header.constants";
-import { Autocomplete, Menu, MenuItem, TextField } from "@mui/material";
+import { Autocomplete, Menu, MenuItem } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { useSelector } from "react-redux";
 import { IStore } from "../../utils/model/store.model";

@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect } from "react";
 import Home from "../home/home";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Login from "../../modules/login-page/login-page";
@@ -44,7 +44,7 @@ const Authorize = () => {
   };
   useEffect(() => {
     validate();
-  }, []);
+  }, [validate]);
   return (
     <Fragment>
       {isLoggedInUser ? (

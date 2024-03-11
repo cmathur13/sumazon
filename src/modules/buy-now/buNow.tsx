@@ -37,7 +37,7 @@ export default function BuyNow() {
   const [qq, setQQ] = React.useState(location.state?.quantity);
   React.useEffect(() => {
     dispatch(asyncGetProductById(location.state?.productId));
-  }, [dispatch]);
+  }, [dispatch, location.state?.productId]);
 
   const isStepOptional = (step: number) => {
     return step === -1;

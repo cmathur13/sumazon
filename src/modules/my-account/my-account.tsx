@@ -66,7 +66,7 @@ const MyAccount = () => {
     if (isError !== "") {
       setIsError("");
     }
-  }, [oldPassword, newPassword, reenterPassword]);
+  }, [oldPassword, newPassword, reenterPassword, isError]);
 
   const handleClose = () => {
     setIsReset(false);
